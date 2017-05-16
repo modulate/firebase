@@ -20,7 +20,9 @@
     "components": [
       "admin/authentication",
       "client/authentication",
-      "x/ds/directory"
+      "x/ds/directory",
+      "x/tokens/custom/seal",
+      "x/tokens/custom/translate"
     ]
   },
   "devDependencies": {
@@ -32,6 +34,7 @@
     "test": "node_modules/.bin/mocha test/*.test.js"
   },
   "dependencies": {
+    "clone": "^2.1.1",
     "firebase": "^3.9.0",
     "firebase-admin": "^4.2.1"
   }
