@@ -1,0 +1,38 @@
+{
+  "name": "@modulate/firebase",
+  "version": "0.0.0",
+  "description": "",
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./app",
+  "assembly": {
+    "namespace": "opt/firebase",
+    "components": [
+      "admin/authentication",
+      "client/authentication",
+      "x/ds/directory"
+    ]
+  },
+  "devDependencies": {
+    "make-node": "^0.3.0",
+    "mocha": "^2.0.0",
+    "chai": "^3.0.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/*.test.js"
+  },
+  "dependencies": {
+    "firebase": "^3.9.0",
+    "firebase-admin": "^4.2.1"
+  }
+}
