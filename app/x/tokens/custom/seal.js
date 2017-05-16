@@ -1,6 +1,8 @@
 exports = module.exports = function(auth) {
   var clone = require('clone');
   
+  // https://firebase.google.com/docs/auth/admin/
+  // https://firebase.google.com/docs/auth/admin/create-custom-tokens
   return function seal(claims, options, cb) {
     var additionalClaims = clone(claims);
     delete additionalClaims.uid;
