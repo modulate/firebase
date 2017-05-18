@@ -20,9 +20,9 @@
     "components": [
       "admin/authentication",
       "client/authentication",
-      "x/ds/directory",
-      "x/tokens/custom/seal",
-      "x/tokens/custom/translate"
+      "directory/firebase",
+      "tokens/custom/seal",
+      "tokens/custom/translate"
     ]
   },
   "devDependencies": {

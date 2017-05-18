@@ -1,13 +1,15 @@
 exports = module.exports = function(container) {
   
   return function createFirebaseDirectory(options) {
-    var Directory = require('../../../lib/directory');
+    return;
+    
+    var FirebaseDirectory = require('../../lib/directory');
     
     return Promise.all([
       container.create('http://schemas.modulate.io/js/opt/firebase/admin/Authentication'),
       container.create('http://schemas.modulate.io/js/opt/firebase/Authentication')
-    ]).then(function(comps) {
-      return new Directory(comps[0], comps[1]);
+    ]).then(function(objs) {
+      return new FirebaseDirectory(objs[0], objs[1]);
     });
   };
 };
