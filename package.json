@@ -18,6 +18,7 @@
   "assembly": {
     "namespace": "opt/firebase",
     "components": [
+      "authentication/directory",
       "authentication/credentials/password",
       "admin/authentication",
       "client/authentication",
