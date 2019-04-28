@@ -1,11 +1,13 @@
 exports = module.exports = function() {
-  var PasswordClient = require('../../../lib/auth/passwordclient');
+  var Client = require('../../../lib/auth/passwordclient');
   
   
   var api = {};
   
+  // TODO: add inferType from URL method
+  
   api.createConnection = function(options) {
-    return new PasswordClient(options.url);
+    return new Client(options.url);
   }
   
   return api;
