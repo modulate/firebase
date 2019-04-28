@@ -1,5 +1,5 @@
 exports = module.exports = function() {
-  var Client = require('../../lib/directory');
+  var Client = require('../../lib/auth/directoryclient');
   
   
   var api = {};
