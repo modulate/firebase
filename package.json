@@ -20,9 +20,6 @@
     "components": [
       "authentication/directory",
       "authentication/credentials/password",
-      "admin/authentication",
-      "client/authentication",
-      "directory/firebase",
       "tokens/custom/seal",
       "tokens/custom/translate"
     ]
