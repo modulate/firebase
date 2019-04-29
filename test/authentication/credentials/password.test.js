@@ -27,15 +27,13 @@ describe('authentication/credentials/password', function() {
     describe('.createConnection', function() {
       
       it('should construct client', function() {
-        var client = api.createConnection({ url: 'foo'});
+        var client = api.createConnection({ url: 'http://www.example.com' });
         
-        expect(ClientSpy).to.have.been.calledOnce;
-        expect(ClientSpy).to.have.been.calledWithExactly('foo');
-        
+        expect(ClientSpy).to.have.been.calledOnceWithExactly('http://www.example.com').and.calledWithNew;
         expect(client).to.be.an.instanceof(Client);
       });
       
-    });
+    }); // .createConnection
     
   });
   
