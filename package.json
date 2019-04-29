@@ -16,7 +16,7 @@
   ],
   "main": "./app",
   "assembly": {
-    "namespace": "opt/firebase",
+    "namespace": "io.modulate/vnd/firebase",
     "components": [
       "authentication/directory",
       "authentication/credentials/password",
