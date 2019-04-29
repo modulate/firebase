@@ -13,5 +13,6 @@ exports = module.exports = function() {
   return api;
 };
 
+exports['@singleton'] = true;
 exports['@implements'] = 'http://schemas.authnomicon.org/sd/IService';
 exports['@type'] = 'firebase-password-http';
