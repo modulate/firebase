@@ -21,18 +21,19 @@ describe('authentication/credentials/password', function() {
     var ClientSpy = sinon.spy(Client);
     
     var api = $require('../../../app/authentication/credentials/password',
-    { '../../../lib/auth/passwordclient': ClientSpy })();
+      { '../../../lib/auth/passwordclient': ClientSpy }
+    )();
     
     describe('.createConnection', function() {
       
-      it('should do something', function() {
-        api.createConnection({ url: 'foo'});
+      it('should construct client', function() {
+        var client = api.createConnection({ url: 'foo'});
         
         expect(ClientSpy).to.have.been.calledOnce;
         expect(ClientSpy).to.have.been.calledWithExactly('foo');
         
-        //expect(1).to.equal(1);
-      })
+        expect(client).to.be.an.instanceof(Client);
+      });
       
     });
     
