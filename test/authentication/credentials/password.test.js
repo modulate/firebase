@@ -19,10 +19,10 @@ describe('authentication/credentials/password', function() {
   
   describe('API', function() {
     var ClientSpy = sinon.spy(Client);
-    
     var api = $require('../../../app/authentication/credentials/password',
       { '../../../lib/auth/passwordclient': ClientSpy }
     )();
+    
     
     describe('.createConnection', function() {
       
@@ -35,6 +35,6 @@ describe('authentication/credentials/password', function() {
       
     }); // .createConnection
     
-  });
+  }); // API
   
 });
