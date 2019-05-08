@@ -13,5 +13,5 @@ exports = module.exports = function() {
   return api;
 };
 
-exports['@implements'] = 'http://schemas.authnomicon.org/sd/IService';
-exports['@type'] = 'firebase-directory';
+exports['@implements'] = 'http://i.bixbyjs.org/IService';
+exports['@name'] = 'firebase-directory';

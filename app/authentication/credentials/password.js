@@ -18,8 +18,8 @@ exports = module.exports = function(creds) {
 };
 
 exports['@singleton'] = true;
-exports['@implements'] = 'http://schemas.authnomicon.org/sd/IService';
-exports['@type'] = 'firebase-password-http';
+exports['@implements'] = 'http://i.bixbyjs.org/IService';
+exports['@name'] = 'firebase-password-http';
 exports['@require'] = [
   'http://i.bixbyjs.org/security/CredentialsStore'
 ];
