@@ -14,8 +14,8 @@ describe('authentication/credentials/password', function() {
   
   it('should be annotated', function() {
     expect(factory['@singleton']).to.equal(true);
-    expect(factory['@implements']).to.equal('http://schemas.authnomicon.org/sd/IService');
-    expect(factory['@type']).to.equal('firebase-password-http');
+    expect(factory['@implements']).to.equal('http://i.bixbyjs.org/IService');
+    expect(factory['@name']).to.equal('firebase-password-http');
   });
   
   describe('API', function() {
